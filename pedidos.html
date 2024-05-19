@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/04f66e3763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/pedidos_estilo.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><div class="logo"><img src="./imagenes/logo1.png" alt="Logo Sitio Web"></div></a>
+            <div class="sesion"><a href=""><i  class="fa-sharp fa-solid fa-user"></i> Iniciar Sesión</a></div>
+        </div>  
+        <nav>
+            <ul class="nav">
+                <li><a href="./index.html"><i class="fa-sharp fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="./components/Productos/productos.html"><i class="fa-solid fa-truck-fast"></i> Productos</a></li>
+                <li><a href="./components/Proveedor/Proveedor.html"><i class="fa-solid fa-users"></i> Proveedores</a></di>
+                <li><a href="./components/Categorias/categorias.html"><i class="fa-solid fa-tag"></i> Categorías</a></li>
+                <li><a href="./components/Pedidos/pedidos.html"><i  class="fa-sharp fa-solid fa-cart-shopping"></i> Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario">
+           
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded"
+        class="formulario-de-producto" onsubmit="return validacion();">
+        <h1 class="titulo-pedido">Realiza aca tu pedido</h1>
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido">
+        <label id="mensaje-nombre"></label>
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <label id="mensaje-correo"></label>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+        <label id="mensaje-telefono"></label>
+
+        <label for="direccion">Direccion de entrega</label>
+        <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+        <label id="mensaje-direccion"></label>
+
+        <label for="producto">Seleccione categoria de productos:</label>
+            <select id="producto" name="producto">
+                <option value="">Seleccione una opcion:</option>
+                <option value="1">Ropa</option>
+                <option value="2">Joyeria</option>
+                <option value="3">Tecnologia</option>
+                <option value="4">Otro</option>
+            </select>
+            <label id="mensaje-seleccion"></label>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1">
+            <label id="mensaje-cantidad"></label>
+
+            <label for="comentario">Deje su comentario para una especificacion <br> de los productos</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="1000"></textarea>
+            <label id="mensaje-comentario"></label>
+
+        <input id="submit" name="submit" type="submit" value="Realizar pedido">
+        
+        </form>
+    </section>
+
+   
+    </main>
+    
+    <footer>
+        <div class="footer-izquierda">
+            <h2 class="titulo-contacto">Contactate con nosotros</h2>
+            <p class="footer_texto1">Si tenes dudas podes ponerte en contacto con nostros y <br> resolveremos tus dudas de forma inmediata</p>
+            <p class="footer_texto2">Seguinos en las redes</p>
+            <a href="#"><img src="./imagenes/icons8-instagram.svg" alt="" class="img-redes"></a>
+            <a href="#"><img src="./imagenes/icons8-twitterx.svg" alt=""  class="img-redes"></a>
+            <p class="footer_texto3">© Codo a Codo 2024</p>
+        <p class="footer_texto4">Diseñado & Desarrollado por <a href="">Julian Borrello</a> | <a href="">Medina</a> | <a href="">Villaroel</a> | <a href="">Zdanovicz</a></p>
+        
+    </div>
+    <div>
+            <form action="#" method="get" enctype="application/x-www-form-urlencoded"
+            class="formulario-de-contacto" onsubmit="return validacionFooter();">
+           
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre-footer" name="nombre" placeholder="Ingrese nombre y apellido">
+            <label id="mensaje-nombre-footer"></label>
+
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo-footer" placeholder="Ingrese su correo">
+            <label id="mensaje-correo-footer"></label>
+
+            <label for="consulta">Consulta</label>
+            <textarea name="comentario" id="comentario-footer" cols="30" rows="5" maxlength="1000"></textarea>
+            <label id="mensaje-comentario-footer"></label>
+            
+            <input id="submit-footer" name="submit" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+    <script src="./js/pedidos.js"></script>
+    <script src="./js/footer.js"></script>
+
+</body>
+</html>
