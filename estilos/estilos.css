@@ -267,9 +267,9 @@ footer a {
     #mensaje-nombre-footer,
     #mensaje-correo-footer,
     #mensaje-comentario-footer {
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 500;
-
+        width: 170px;
     }
 
     .titulo-contacto {
@@ -281,7 +281,8 @@ footer a {
     .footer_texto2,
     .footer_texto3,
     .footer_texto4 {
-        font-size: 13px;
+        font-size: 12px;
+        margin-left: 10px;
     }
 
     .img-redes {
