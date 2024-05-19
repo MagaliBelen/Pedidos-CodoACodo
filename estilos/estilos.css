@@ -92,6 +92,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3rem;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -123,7 +124,7 @@ footer a {
     padding-top: 20px;
 }
 
-.formulario-de-contacto #placeholder {
+.formulario-de-contacto ::placeholder {
     font-family: "Poppins", sans-serif;
     color: black;
 }
@@ -235,9 +236,6 @@ footer a {
 
     }
 
-    /* .footer-izquierda{
-            margin-left: 20px;
-        } */
 
     .formulario-de-contacto #nombre-footer {
 
@@ -294,7 +292,33 @@ footer a {
     .formulario-de-contacto ::placeholder {
         font-size: 10.5px;
     }
+
+    .formulario-de-contacto #nombre-footer {
+        
+        background-size: 9%;
+        padding: 4px 20px 6px 20px;
+    }
+    
+    
+    
+    .formulario-de-contacto #correo-footer {
+        
+        background-size: 9%;
+        padding: 4px 20px 6px 20px;
+        
+    }
+
+    .formulario-de-contacto input{
+        font-size: 10.5px;
+    }
+
+    .formulario-de-contacto textarea{
+        font-size: 10.5px;
+    }
 }
+
+
+
 
 /*media query header*/
 @media (max-width: 420px) {

@@ -28,7 +28,7 @@ main{
 
 
 
-#placeholder{
+::placeholder{
     font-family: "Poppins", sans-serif;
     color: black;
 }
