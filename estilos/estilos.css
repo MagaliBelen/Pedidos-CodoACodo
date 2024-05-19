@@ -207,6 +207,7 @@ padding: 5px;
     font-weight: 550;
 }
 
+/* media query footer */
 @media (max-width: 420px) { 
  
         footer {
@@ -270,4 +271,10 @@ padding: 5px;
             }
 }
 
-  
+  /*media query header*/
+  @media (max-width: 420px) { 
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+  }
