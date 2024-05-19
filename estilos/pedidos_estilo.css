@@ -155,6 +155,7 @@ label {
     }
     .formulario-de-producto {
        justify-content: center;
-        /* margin-left: 50px; */
+       margin:10px;
+       
     }
 }

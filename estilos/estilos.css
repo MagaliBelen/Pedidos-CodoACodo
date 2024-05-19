@@ -1,76 +1,87 @@
-header{
+header {
     border-bottom-style: dashed;
 }
-    
-body{
+
+body {
     font-family: "poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1e1e2e;
 
 }
-a{
+
+a {
     text-decoration: none;
     color: #adb5bd;
 }
-a:hover{
+
+a:hover {
     color: #dddfe0;
 }
 
-header{
+header {
     padding: 10px;
     filter: drop-shadow(0 2px 8px rgba(143, 138, 138, 0.2));
     background-color: #1f1f31;
     color: #adb5bd;
-    
-}
-header .logo, .sesion{
-    padding-left: 3rem; 
-    padding-right: 3rem;
+
 }
 
-header ul{
+header .logo,
+.sesion {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.header{
+
+header ul {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 }
-.sesion{
+
+.sesion {
     padding-bottom: 1rem;
 
 }
-.header, .logo{
+
+.header,
+.logo {
     display: flex;
     border-bottom: 1px solid #303644;
     margin-bottom: 1.5rem;
 }
-.logo{
+
+.logo {
     border-bottom: 0;
 }
-header .logo{
+
+header .logo {
     width: 70px;
     height: 70px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
     margin-right: 3rem;
 }
 
 /******************************/
-footer{
-   
-    display: flex; 
+footer {
+
+    display: flex;
     justify-content: space-between;
     background-color: #1f1f31;
     color: #adb5bd;
@@ -84,24 +95,24 @@ footer{
 
 }
 
-footer a{
+footer a {
     color: rgb(189, 161, 249);
 }
 
 
-.img-redes{
+.img-redes {
     filter: invert(100%);
 }
 
 
-.titulo-contacto{
+.titulo-contacto {
     font-size: 18px;
     text-align: center;
 }
 
-.footer_texto1{
-border: 1px #adb5bd solid;
-padding: 5px;
+.footer_texto1 {
+    border: 1px #adb5bd solid;
+    padding: 5px;
 }
 
 .formulario-de-contacto {
@@ -109,10 +120,10 @@ padding: 5px;
     flex-direction: column;
     font-family: "Poppins", sans-serif;
     color: #adb5bd;
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
-.formulario-de-contacto #placeholder{
+.formulario-de-contacto #placeholder {
     font-family: "Poppins", sans-serif;
     color: black;
 }
@@ -124,7 +135,7 @@ padding: 5px;
 
 }
 
-.formulario-de-contacto #nombre-footer{
+.formulario-de-contacto #nombre-footer {
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 10px;
@@ -135,7 +146,7 @@ padding: 5px;
 
 }
 
-.formulario-de-contacto  #correo-footer{
+.formulario-de-contacto #correo-footer {
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 10px;
@@ -157,26 +168,26 @@ padding: 5px;
 
 
 .formulario-de-contacto #submit-footer {
-        width: 120px;
-        height: 35px;
-        margin-top: 20px;
-        color: #ffffff;
-        background-color:#17a1a3;
-        border: none;
-        border-radius: 10px;
-        font-size: 14px;
-        padding: 4px;
-        cursor: pointer;
-        transition: 0.4s;
-        font-family: "Poppins", sans-serif;
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #17a1a3;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "Poppins", sans-serif;
 }
 
-.formulario-de-contacto #submit-footer:hover{
-    background-color:#067c4f;
+.formulario-de-contacto #submit-footer:hover {
+    background-color: #067c4f;
 }
 
 
-.formulario-de-contacto #nombre-footer{
+.formulario-de-contacto #nombre-footer {
     background-image: url(../imagenes/icono_persona_form.svg);
     background-repeat: no-repeat;
     background-size: 8%;
@@ -184,11 +195,11 @@ padding: 5px;
     background-position: left center;
 }
 
-.formulario-de-contacto #nombre-footer:active{
+.formulario-de-contacto #nombre-footer:active {
     background-image: url(../imagenes/icono_persona_form.svg);
 }
 
-.formulario-de-contacto #correo-footer{
+.formulario-de-contacto #correo-footer {
     background-image: url(../imagenes/icono_mail_form.svg);
     background-repeat: no-repeat;
     background-size: 8%;
@@ -196,11 +207,13 @@ padding: 5px;
     background-position: left center;
 }
 
-.formulario-de-contacto #correo-footer:active{
+.formulario-de-contacto #correo-footer:active {
     background-image: url(../imagenes/icono_mail_form.svg);
 }
 
-#mensaje-nombre-footer, #mensaje-correo-footer, #mensaje-comentario-footer{
+#mensaje-nombre-footer,
+#mensaje-correo-footer,
+#mensaje-comentario-footer {
     font-size: 12px;
     color: #940606;
     background-color: #7e7b997d;
@@ -208,73 +221,85 @@ padding: 5px;
 }
 
 /* media query footer */
-@media (max-width: 420px) { 
- 
-        footer {
-            display: flex;
-            justify-content: space-between;
-        }
-        footer div {
-            width: 45%;
-            margin-bottom: 0;
-           
-        }
+@media (max-width: 420px) {
 
-        .footer-izquierda{
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer div {
+        width: 45%;
+        margin-bottom: 0;
+        margin: 10px;
+
+    }
+
+    /* .footer-izquierda{
             margin-left: 20px;
-        }
+        } */
 
-        .formulario-de-contacto #nombre-footer{
-           
-            width: 155px;
-        
-        }
-        
-        .formulario-de-contacto  #correo-footer{
-            
-            width: 155px;
-        
-        }
-        
-        .formulario-de-contacto textarea {
-            
-            width: 205px;
-          
-        }
-        
-        
-        .formulario-de-contacto #submit-footer {
-                width: 100px;
-                height: 30px;
-                
-                font-size: 13px;
-          
-        }
+    .formulario-de-contacto #nombre-footer {
 
-        #mensaje-nombre-footer, #mensaje-correo-footer, #mensaje-comentario-footer{
-            font-size: 10px;
-            font-weight: 500;
-          
-        }
+        width: 125px;
 
-        .titulo-contacto{
-            font-size: 15px;
-          
-        }
+    }
 
-        .footer_texto1, .footer_texto2, .footer_texto3, .footer_texto4{
-            font-size: 13px;
-            }
-            .img-redes{
-                width: 35px;
-                height: auto;
-            }
+    .formulario-de-contacto #correo-footer {
+
+        width: 125px;
+
+    }
+
+    .formulario-de-contacto textarea {
+
+        width: 175px;
+
+    }
+
+
+    .formulario-de-contacto #submit-footer {
+        width: 100px;
+        height: 30px;
+
+        font-size: 13px;
+
+    }
+
+    #mensaje-nombre-footer,
+    #mensaje-correo-footer,
+    #mensaje-comentario-footer {
+        font-size: 10px;
+        font-weight: 500;
+
+    }
+
+    .titulo-contacto {
+        font-size: 15px;
+
+    }
+
+    .footer_texto1,
+    .footer_texto2,
+    .footer_texto3,
+    .footer_texto4 {
+        font-size: 13px;
+    }
+
+    .img-redes {
+        width: 35px;
+        height: auto;
+    }
+
+    .formulario-de-contacto ::placeholder {
+        font-size: 10.5px;
+    }
 }
 
-  /*media query header*/
-  @media (max-width: 420px) { 
+/*media query header*/
+@media (max-width: 420px) {
     nav ul {
         display: flex;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
-  }
+}
